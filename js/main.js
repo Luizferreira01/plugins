@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    
     $('#telefone').mask('(00) 00000-0000', {
         placeholder: '(__) _____-____'
     });
@@ -35,13 +34,13 @@ $(document).ready(function(){
                 required: true
             }
         },
-        messages {
+        messages: {
             nome: 'por favor, insira o seu Nome',
             email: 'por favor, insira o seu E-mail',
             telefone: 'por favor, insira o seu Telefone',
             cpf: 'por favor, insira o seu CPF',
             endereço: 'por favor, insira o seu Endereço',
-            Cep: 'por favor, insira o seu CEP',
+            cep: 'por favor, insira o seu CEP',
         },
         submitHandler: function(form) {
             console.log(form)
@@ -51,5 +50,6 @@ $(document).ready(function(){
             if (camposIncorretos) {
                 alert(`Existem ${camposIncorretos} campos incorretos`)
             }
-    }
+        }
+    })
 })
